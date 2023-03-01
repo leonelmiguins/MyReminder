@@ -1,0 +1,77 @@
+@font-face {
+    font-family: square-one;
+    src: url('../font/square_one_italic.ttf');
+}
+
+@font-face {
+    font-family: mermaid;
+    src: url('../font/mermaid1001.ttf');
+}
+
+body{
+    
+    font-family: mermaid;
+    font-size: 15pt;
+    margin: 0;
+    min-width: 395px;
+    width: 100%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-width: 395px;
+    height: 70px;
+    background-color: rgb(18, 17, 17);
+    color: beige;
+    box-shadow: 0px 3px 5px gray;
+    margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 500px;
+}
+
+.header-logo{
+    font-family: square-one;
+    font-size: 35pt;
+    color: limegreen;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.header-nav{
+    position: fixed;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.btn-login{
+    font-family: mermaid;
+    color: limegreen;
+    font-size: 12pt;
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+
+}
+
+
+
+@media only screen and (max-width: 905px) {
+
+    .header-nav{
+        display: none;
+    }
+
+
+  }
+
