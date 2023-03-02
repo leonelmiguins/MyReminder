@@ -1,6 +1,9 @@
- // run this function when the document is loaded
- 
-function create(){
+function createNewReminder(){
+   let modal = document.querySelector('.modal');
+   modal.style.display='block';
+}
 
-
+function cancelNewReminder(){
+   let modal = document.querySelector('.modal');
+   modal.style.display='none';
 }

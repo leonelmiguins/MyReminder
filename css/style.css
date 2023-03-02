@@ -13,7 +13,7 @@ body{
     font-family: mermaid;
     font-size: 15pt;
     margin: 0;
-    min-width: 395px;
+    min-width: 507px;
     width: 100%;
 }
 
@@ -46,6 +46,13 @@ header{
     margin-top: 15px;
 }
 
+header a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+
+}
+
 .btn-login{
     font-family: mermaid;
     color: limegreen;
@@ -57,12 +64,96 @@ header{
     border-radius: 5px;
 }
 
-a{
-    text-decoration: none;
+.btn-login:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.modal{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid limegreen;
+    box-shadow: 5px 5px 15px gray;
+    display: none;
+    transform: translate(-50%, -50%);
+    animation:  animate;
+    animation-duration: 800ms;
+}
+
+@keyframes animate {
+    from {opacity: 1;}
+    from {opacity: 0;}
+}
+
+.modal-btn-save{
+    font-family: mermaid;
+    font-size: 15pt;
+    background-color: rgb(37, 173, 37);
+    border: 2px solid green;
     color: white;
-    margin-right: 30px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
 }
+
+.modal-btn-cancel{
+    font-family: mermaid;
+    font-size: 15pt;
+    background-color: rgb(169, 45, 45);
+    border: 2px solid rgb(40, 36, 36);
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.modal-btn-save:hover, .modal-btn-cancel:hover{
+    transform: scale(1.1);
+}
+
+.modal-element-text{
+    font-family: mermaid;
+    width: 98%;
+    height: 50px;
+    border: none;
+    outline-width: 0;
+    border-radius: 5px;
+    font-size: 16pt;
+    max-width: 98%;
+    max-height: 100px;
+
+}
+
+.modal-element-days{
+    width: 93%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 15pt;
+    text-align: left;
+    accent-color: limegreen;
+
+}
+
+.modal-element-btns{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+}
+
 
 
 
@@ -70,6 +161,11 @@ a{
 
     .header-nav{
         display: none;
+    }
+
+    .header-logo{
+        margin-left: 5px;
+        font-size: 30pt;
     }
 
 

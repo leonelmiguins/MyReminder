@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Programing by leonel miguins 2023-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,12 +19,48 @@
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">My Reminders</a>
-            <input class="btn-login" type="button" value="+ Create Reminder" onclick="create()"> 
+            <input class="btn-login" type="button" value="+ Create Reminder" onclick="createNewReminder()"> 
         </div>
     </header>
     <br>
     <br>
-    <!-- reminders -->
+    <br>
+    <!-- new reminders modal -->
+    <div class="modal">
+        <h2>New Reminder!</h2>
+        <form>
+        
+
+            <fieldset class="modal-element-days">
+                <legend>Write your reminder</legend>
+                <input type="text" class="modal-element-text" maxlength="200" placeholder="Buying a bouquet of flowers for my girlfriend!">
+            </fieldset>   
+            <br>
+            <fieldset class="modal-element-days">
+                <legend>Choose your days of week</legend>
+                   <label><input type="checkbox" id="monday" name="interest" value="monday" checked/>Monday</label>
+                   <label><input type="checkbox" id="coding" name="interest" value="tuesday"/>Tuesday</label>
+                   <label><input type="checkbox" id="coding" name="interest" value="monday"/>Wednesday</label>
+                   <label><input type="checkbox" id="coding" name="interest" value="monday"/>Thursday</label><br>
+                   <label><input type="checkbox" id="coding" name="interest" value="monday"/>Friday</label>
+                   <label><input type="checkbox" id="coding" name="interest" value="monday"/>Saturday</label>
+                   <label><input type="checkbox" id="coding" name="interest" value="monday"/>Sunday</label>
+            </fieldset>
+            <br>
+            <fieldset class="modal-element-days">
+                <legend>Reminder Time</legend>
+                <input type="time" class="modal-element-text">
+            </fieldset>   
+            <br>
+            <div class="modal-element-btns">
+                <input class="modal-btn-save" type="button" value="save">
+                <input class="modal-btn-cancel" type="button" value="cancel" onclick="cancelNewReminder()">
+            </div>
+
+        </form>
+
+
+    </div>
   
 </body>
 </html>
